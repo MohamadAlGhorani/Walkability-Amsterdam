@@ -37,7 +37,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:5
-        }).fitBounds([[52.31223968399686,4.786833816144404],[52.4082680159797,5.042928524068986]]);
+        }).fitBounds([[52.315632995193845,4.779387483125396],[52.39752114712707,4.996951503084435]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var bounds_group = new L.featureGroup([]);
@@ -337,7 +337,7 @@
         bounds_group.addLayer(layer_MONUMENTEN_3);
         map.addLayer(layer_MONUMENTEN_3);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'MONUMENTEN<br /><table><tr><td style="text-align: center;"><img src="legend/MONUMENTEN_3_Beeldhouwkunst0.png" /></td><td>Beeldhouwkunst</td></tr><tr><td style="text-align: center;"><img src="legend/MONUMENTEN_3_ParkTerrein1.png" /></td><td>ParkTerrein</td></tr></table>': layer_MONUMENTEN_3,'<img src="legend/GROENPLEKKEN_2.png" /> GROEN PLEKKEN': layer_GROENPLEKKEN_2,'WALKABILITY<br /><table><tr><td style="text-align: center;"><img src="legend/WALKABILITY_1_slecht0.png" /></td><td>slecht</td></tr><tr><td style="text-align: center;"><img src="legend/WALKABILITY_1_matig1.png" /></td><td>matig</td></tr><tr><td style="text-align: center;"><img src="legend/WALKABILITY_1_goed2.png" /></td><td>goed</td></tr><tr><td style="text-align: center;"><img src="legend/WALKABILITY_1_uitstekend3.png" /></td><td>uitstekend</td></tr></table>': layer_WALKABILITY_1,'<img src="legend/KAARTBINNENDERING_0.png" /> KAART BINNEN DE RING': layer_KAARTBINNENDERING_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'MONUMENTEN<br /><table><tr><td style="text-align: center;"><img src="legend/MONUMENTEN_3_Beeldhouwkunst0.png" /></td><td>Beeldhouwkunst</td></tr><tr><td style="text-align: center;"><img src="legend/MONUMENTEN_3_ParkTerrein1.png" /></td><td>ParkTerrein</td></tr></table>': layer_MONUMENTEN_3,'<img src="legend/GROENPLEKKEN_2.png" /> GROEN PLEKKEN': layer_GROENPLEKKEN_2,'WALKABILITY<br /><table><tr><td style="text-align: center;"><img src="legend/WALKABILITY_1_slecht0.png" /></td><td>slecht</td></tr><tr><td style="text-align: center;"><img src="legend/WALKABILITY_1_matig1.png" /></td><td>matig</td></tr><tr><td style="text-align: center;"><img src="legend/WALKABILITY_1_goed2.png" /></td><td>goed</td></tr><tr><td style="text-align: center;"><img src="legend/WALKABILITY_1_uitstekend3.png" /></td><td>uitstekend</td></tr></table>': layer_WALKABILITY_1,'<img src="legend/KAARTBINNENDERING_0.png" /> KAART BINNEN DE RING': layer_KAARTBINNENDERING_0,}).addTo(map);
         setBounds();
         var i = 0;
         layer_KAARTBINNENDERING_0.eachLayer(function(layer) {
